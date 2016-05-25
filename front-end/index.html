@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DWH</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <div id="app-container">
+    <header id="app-header">
+      <h1><a href="/">DataWarehouse-MongoDB GridFS</a></h1>
+    </header>
+    <section id="app-search">
+      <div class="dropdown">
+        <div class="dropdown-trigger-container">
+          <div class="text-container">
+            <span class="select-text">Asignaturas</span>
+            <img src="images/caret.png" height="20" width="20">
+            <!-- <p class="multiSel"></p> -->
+          </div>
+        </div>
+        <div class="dropdown-options-container">
+          <div class="mutliSelect">
+            <ul>
+              <li><input type="checkbox" value="Algorítmica Númerica" checked="true"/>Algorítmica Númerica</li>
+              <li><input type="checkbox" value="Ingeniería de Integración Tecnológica" checked="true"/>Ingeniería de Integración Tecnológica</li>
+              <li><input type="checkbox" value="Matemática Discreta I" checked="true"/>Matemática Discreta I</li>
+              <li><input type="checkbox" value="Procesadores de Lenguajes" checked="true"/>Procesadores de Lenguajes</li>
+              <li><input type="checkbox" value="Programación II" checked="true"/>Programación II</li>
+              <li><input type="checkbox" value="Sistemas Operativos" checked="true"/>Sistemas Operativos</li>
+              <li><input type="checkbox" value="Sistemas Orientados a Servicios" checked="true"/>Sistemas Orientados a Servicios</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-trigger-container">
+          <div class="text-container">
+            <span class="select-text">Semestres</span>
+            <img src="images/caret.png" height="20" width="20">
+            <!-- <p class="multiSel"></p> -->
+          </div>
+        </div>
+        <div class="dropdown-options-container">
+          <div class="mutliSelect">
+            <ul>
+              <li><input type="checkbox" value="1" checked="true"/>1</li>
+              <li><input type="checkbox" value="2" checked="true"/>2</li>
+              <li><input type="checkbox" value="3" checked="true"/>3</li>
+              <li><input type="checkbox" value="4" checked="true"/>4</li>
+              <li><input type="checkbox" value="5" checked="true"/>5</li>
+              <li><input type="checkbox" value="6" checked="true"/>6</li>
+              <li><input type="checkbox" value="7" checked="true"/>7</li>
+              <li><input type="checkbox" value="8" checked="true"/>8</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-trigger-container">
+          <div class="text-container">
+            <span class="select-text">Tipos</span>
+            <img src="images/caret.png" height="20" width="20">
+            <!-- <p class="multiSel"></p> -->
+          </div>
+        </div>
+        <div class="dropdown-options-container">
+          <div class="mutliSelect">
+            <ul>
+              <li><input type="checkbox" value="Ejercicios" checked="true"/>Ejercicios</li>
+              <li><input type="checkbox" value="Examen" checked="true"/>Examen</li>
+              <li><input type="checkbox" value="Proyecto" checked="true"/>Proyecto</li>
+              <li><input type="checkbox" value="Teoría" checked="true"/>Teoría</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="button">FILTRAR ARCHIVOS</div>
+    </section>
+    <hr>
+    <section id="app-files">
+      <div id="files-container" class="files-container">
+        <div class="loader"></div>
+      </div>
+    </section>
+  </div>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
